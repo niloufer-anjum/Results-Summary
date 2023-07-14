@@ -1,0 +1,133 @@
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0 0 30px 30px;
+    margin: 0;
+}
+
+.card-result {
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result-circle .score {
+    font-size: 3em;
+    margin: 1rem;
+}
+
+.aspects {
+    margin: 0;
+}
+
+.aspect {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: grey;
+}
+
+.aspect-reaction {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.aspect-reaction-name {
+    color: hsl(0, 100%, 67%);
+}
+
+.aspect-memory {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.aspect-memory-name {
+    color: hsl(39, 100%, 56%);
+}
+
+.aspect-verbal {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.aspect-verbal-name {
+    color: hsl(166, 100%, 37%);
+}
+
+.aspect-visual {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.aspect-visual-name {
+    color: hsl(234, 85%, 45%);
+}
+
+.aspect_score_top {
+    color: black;
+    font-weight: bold;
+}
+
+.continue {
+    color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 1em;
+    font-weight: bold;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.continue:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+} 
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 400px) {
+    .body {
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        padding: 1rem;
+        margin: 0;
+        width: 25%;
+        height: 50%;
+        justify-content: space-around;
+    }   
+    .card-result {
+        border-radius: 30px 30px;
+        width: 20rem;
+    }
+
+    .card-summary {
+        border-radius: 0 30px 30px 0;
+        width: 20rem;
+        box-shadow: 10px 10px 5px hsl(221, 100%, 96%);
+    }
+}
